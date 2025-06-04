@@ -22,7 +22,7 @@ export const content = {
   footer: {
     about: {
       title: "About",
-      description: `Play ${siteConfig.name} - a free physics-based battle game right in your browser. No downloads required.`,
+      description: `Play ${siteConfig.name} - a free baseball game right in your browser. No downloads required.`,
     },
     quickLinks: {
       title: "Quick Links",
@@ -40,14 +40,7 @@ export const content = {
     games: {  // 添加 games section
       title: "Games",
       links: [
-        { text: "Crazy Cattle 3D", href: "/" },
-        { text: "Crazy Cow 3D", href: "/crazy-cow-3d" },
-        { text: "Crazy Chicken 3D", href: "/crazy-chicken-3d" },
-        { text: "Cheese Chompers 3D", href: "/cheese-chompers-3d" },
-        { text: "Italian Brainrot Clicker", href: "/brainrot-clicker" },
-        { text: "Basketball Bros Unblocked", href: "/basketball-bros-unblocked" },
-        { text: "Pokemon Gamma Emerald", href: "/pokemon-gamma-emerald" },
-        { text: "Sprunki Incredibox", href: "/sprunki-incredibox" },
+        { text: "Doodle Baseball", href: "#game-section" }
       ]
     },
     social: {
@@ -73,22 +66,21 @@ export const content = {
       ]
     },
     copyright: {
-      text: "© {year} Crazy Cattle 3D. All rights reserved.",
+      text: "© {year} Doodle Baseball. All rights reserved.",
       subText: "All games on this platform are free to play and do not require downloads."
     }
   },
   rating: {
-    title: "Rate CrazyCattle3D",
+    title: "Rate Doodle Baseball",
     votes: "votes",
     initialRating: 4.8,
     initialVotes: 146
   },
   gameSection: {
-    title: "Crazy Cattle 3D",
+    title: "Play Doodle Baseball Online Free",
     game: {
-      url: '/crazy-cattle-3d.embed',
-      title: "crazycattle3d",
-      externalUrl: '/game/crazycattle3d/index.html'
+      title: "Doodle Baseball",
+      url: "/doodle-baseball.embed"
     }
   },
   otherGames: {
@@ -97,113 +89,103 @@ export const content = {
       playButton: "Play Now",
     }
   },
-  howToPlay: {
-    // Added "Online Free", "Play"
-    title: "How to Play Crazy Cattle 3D Online Free - Game Controls & Guide",
-    // Added "unblocked", "play this free game"
-    description: "Playing Crazy Cattle 3D online unblocked is easy: Use WASD keys for movement and mouse for precise sheep steering when you play this free browser game. The space bar triggers your special collision ability in Crazy Cattle 3D - master the timing for devastating impacts. Perfect your control over the sheep's momentum as you navigate through the 3D battle arena.\n\n" +
-      // Added "online game"
-      "Success in Crazy Cattle 3D multiplayer battles depends on mastering the physics-based momentum system in this online game. Strategically build speed by moving downhill in the 3D arena, then unleash powerful attacks or execute quick escapes. Crazy Cattle 3D's unique collision mechanics reward skillful timing - precisely angled hits send opponents flying off the map, while mistimed attacks leave your sheep exposed.\n\n" +
-      // Added "play", "free online game"
-      "Win more Crazy Cattle 3D matches by starting defensively - focus on survival and strategic positioning. Study each arena's layout to discover prime attack positions and danger zones. After defeats when you play Crazy Cattle 3D, spectate top players to learn pro techniques. Keep practicing this free online physics game, and you'll soon master the art of sheep combat!",
-    // Image path unchanged
-    image: "/assets/crazycattle3d-howto.jpg",
-    // Added "Play Online Unblocked"
-    imageAlt: "Crazy Cattle 3D Game Guide - Play Online Unblocked, Controls, Physics, and Strategy Tutorial"
-  },
-  whatIs: {
-    // Added "Play Game Online Free"
-    title: "Everything about Crazy Cattle 3D - Play Game Online Free",
-    // Added "free online game", "unblocked"
-    description: "Crazy Cattle 3D is an independently developed free online battle royale game where players control explosive sheep across varied terrain. You can play this game unblocked anytime. Unlike traditional battle royales, we focus on physics-based gameplay with momentum and collision mechanics rather than weapon collection.\n\n" +
-      // Added "online game"
-      "Master the art of sheep locomotion across three distinct environments in this exciting online game: the rolling hills of Ireland, volcanic Iceland, and mountainous New Zealand. Each map offers unique strategic opportunities, creating a chaotic yet strategic 30-minute battle experience.\n\n" +
-      // Added "play this free online game", "unblocked"
-      "While the game's high difficulty level may challenge newcomers, mastering our unique physics system delivers a deeply satisfying experience. Play this free online game directly in your browser unblocked - no downloads needed, just pure explosive sheep action that keeps you coming back for more.",
-    logo: {
-      // Image path unchanged
-      src: "/assets/img/android-chrome-512x512.png",
-      // Added "Free Online Unblocked Game"
-      alt: "Crazy Cattle 3D - Free Online Unblocked Game Logo"
-    }
-  },
-  faq: {
-    // Title already well-optimized
-    title: "Frequently Asked Questions - Crazy Cattle 3D Online Game",
+  features: {
+    // Title emphasizing the game's fun, theme, and origin
+    title: "Doodle Baseball: Swing with Food! Google Doodle Game Features - Play Free!",
     items: [
       {
-        value: "where-to-play-original", // New item based on PAA
-        question: "Where can I find and play the original Crazy Cattle 3D online?",
-        answer: "The original Crazy Cattle 3D game can officially be found on itch.io. However, you can also play Crazy Cattle 3D unblocked on various free online games websites that host web-based versions. This allows you to play the game directly in your browser on Windows, Mac, Linux, and other web-supported environments."
+        // Highlights the core gameplay and unique characters
+        title: "Play as Iconic Food Characters",
+        description: "Step up to the plate in Doodle Baseball as American fast foods like H-Dog (hot dog) or Power Pop (popcorn)! Face off against peanut pitchers in this hilarious free online game. It's classic Google Doodle fun!"
       },
       {
-        value: "play-on-mobile", // New item based on PAA
-        question: "Can I play Crazy Cattle 3D online on my mobile device?",
-        answer: "Yes, since Crazy Cattle 3D is available in web-based environments (as a browser game), you can often play this free online game on mobile devices (phones and tablets) that support modern web browsers. Look for unblocked versions to play the game on the go."
+        // Focuses on the simple, addictive mechanics
+        title: "Simple Click-to-Swing Action",
+        description: "Easy to learn, tough to master! Just click to swing your bat in Doodle Baseball. Perfect timing is key to hitting home runs and avoiding strikes in this addictive unblocked game."
       },
       {
-        value: "creator-info", // New item based on PAA
-        question: "Who is the creator of the Crazy Cattle 3D game?",
-        answer: "Currently, little is publicly known about the specific original creator or development team behind the Crazy Cattle 3D game. Most assets appear to be original works. Many players enjoy playing this free online game for its unique physics and fun regardless!"
+        // Emphasizes the unique Google Doodle art style and celebratory theme
+        title: "Iconic Google Doodle Art & Sounds",
+        description: "Enjoy the charming, hand-drawn Google Doodle art style and responsive sounds like crowd roars and 'Strike!'. See fireworks and Liberty Bells on home runs in this celebratory online game, often linked to the Fourth of July!"
       },
       {
-        value: "game-rating", // New item based on PAA
-        question: "What is the rating for the Crazy Cattle 3D online game?",
-        answer: "There isn't a single official 'rating' (like ESRB) for Crazy Cattle 3D, as it's often found on various platforms and unblocked games sites. However, it's widely regarded as a fun, chaotic, and engaging free online physics game. You can find player opinions and community feedback on sites where you play the game."
+        // Details the varying pitch difficulties
+        title: "Dynamic Pitch Difficulty",
+        description: "Challenge your reflexes! Pitches in Doodle Baseball change color to indicate speed: green/blue are slow, purple/yellow are faster, and red pitches are super fast. Adapt your timing to play and win!"
       },
       {
-        value: "new-player-difficulty", // Adjusted existing item's value for clarity
-        question: "How difficult is the Crazy Cattle 3D online game for new players?",
-        answer: "Crazy Cattle 3D is designed with an intuitive physics-based control system that's easy to grasp but challenging to master. The game starts with basic movement mechanics, allowing new players to enjoy immediate action while gradually discovering advanced techniques when you play this free game. Our tutorial mode helps you understand momentum-based gameplay, and the forgiving respawn system encourages experimentation without frustration."
-      },
-      {
-        value: "technical-requirements-online", // Adjusted existing item's value
-        question: "What are the technical requirements to play Crazy Cattle 3D online smoothly?",
-        answer: "To best play Crazy Cattle 3D online for free and unblocked, we recommend using a modern browser (Chrome, Firefox, or Edge) and a stable internet connection. The game's physics engine is optimized to run smoothly on most devices, but for best performance, ensure your device has at least 4GB RAM and updated graphics drivers. If you experience any slowdown, try adjusting the quality settings in the game menu when you play this online game."
-      },
-      {
-        value: "available-game-modes", // Adjusted existing item's value
-        question: "What game modes are available when you play Crazy Cattle 3D online?",
-        answer: "Crazy Cattle 3D currently features an exciting single-player arena mode in this free online game where you compete against intelligent AI opponents. Each match offers a unique experience thanks to our dynamic physics system and varied arena layouts. Practice mode lets you perfect your skills without pressure, while Challenge mode puts your abilities to the test with increasingly difficult scenarios and objectives. Many play these game modes unblocked."
-      },
-      {
-        value: "comfort-settings-online-game", // Adjusted existing item's value
-        question: "How can I adjust Crazy Cattle 3D for a more comfortable online gaming experience?",
-        answer: "Crazy Cattle 3D includes several comfort options to enhance your free online game experience. You can adjust camera sensitivity, enable smooth camera transitions, and customize control responsiveness. We recommend starting with default settings and gradually adjusting them to match your play style. The game also features visual indicators for better spatial awareness during intense physics-based battles when you play this game."
-      },
-      {
-        value: "winning-tactics-game", // Adjusted existing item's value
-        question: "What tactics help secure victories when I play the Crazy Cattle 3D game?",
-        answer: "Mastering the Crazy Cattle 3D online game requires understanding of momentum and timing. Start by learning the arena layouts and identifying high-ground advantages. Use the environment to build speed, and practice the signature 'bounce boost' technique for quick escapes. Advanced players can master the 'precision impact' strategy, where carefully timed collisions can send opponents off balance. Remember, strategic positioning often matters more than aggressive charging in this free unblocked game."
+        // Highlights accessibility and broad appeal
+        title: "Instant Fun for All Ages - Free & Unblocked",
+        description: "Doodle Baseball is a fantastic free online game for everyone. Play instantly in your browser, unblocked, with no downloads required. Perfect for a quick, fun Google Doodle game session!"
       }
     ]
   },
-  features: {
-    // Title already has "Online Game", added "Play Free"
-    title: "Revolutionary Features of Crazy Cattle 3D - Play Free Online Game",
+
+  whatIs: {
+    // Title clearly defines the game and its fame
+    title: "What is Doodle Baseball? The Famous Google Doodle Food Fight Game!",
+    // Description based on provided info, integrating keywords
+    description: "Doodle Baseball is the thrilling and captivating Google Doodle sport game that baseball fans and food enthusiasts love! Originally celebrating events like Major League Baseball or the Fourth of July, this free online game features American summertime munchies as players, facing off against peanut pitchers.\n\n" +
+      "The gameplay is simple: as a batter (like a hot dog or french fry), click to swing and hit the ball, aiming for home runs. Doodle Baseball combines perfect timing, prediction, and reaction skills, offering a stimulating and engaging experience. With its unique food characters (H-Dog, Power Pop, Big Red) and charming Google Doodle art, it's an unblocked game that provides endless fun.\n\n" +
+      "Ready to play this iconic Google Doodle game? No downloads needed for Doodle Baseball. Step into the batter's box, swing for the fences, and enjoy this free online classic!",
+    logo: {
+      // Placeholder - update if you have a specific logo for your Doodle Baseball page
+      src: "/assets/img/android-chrome-512x512.png",
+      // Alt text updated for the game concept and keywords
+      alt: "Doodle Baseball - Free Online Google Doodle Food Game Logo"
+    }
+  },
+
+  howToPlay: {
+    // Title reflecting the game and keywords
+    title: "How to Play Doodle Baseball Online Free: A Google Doodle Game Guide",
+    // Description focused on in-game controls and objectives
+    description: "Playing Doodle Baseball online is incredibly simple and fun! Once the Google Doodle game loads, you'll automatically be in the batter's box as a food character. The pitcher (a peanut) will throw the ball. Your goal is to click your mouse (or tap your screen) at the perfect moment to swing the bat and hit the ball.\n\n" +
+      "Aim to hit home runs to score the most points in this free game! Pay attention to the color of the pitch in Doodle Baseball: green/blue are easier, while purple, yellow, and especially red pitches are faster and require quicker reflexes. If you miss the ball three times (three strikes), you're out, and the game ends.\n\n" +
+      "The more home runs you score, the higher your achievement. Play this unblocked Google Doodle game now and see if you can hit a grand slam against those tricky peanut pitchers!",
+    // Placeholder - update if you have a specific gameplay image
+    image: "/assets/doodle-baseball/doodle-baseball.webp",
+    // Alt text updated
+    imageAlt: "Doodle Baseball Online Game Guide - Free Google Doodle Click-to-Swing Gameplay"
+  },
+
+  faq: {
+    // Title updated for clarity
+    title: "Doodle Baseball: Your Questions Answered (Google Doodle Game FAQ)",
     items: [
       {
-        title: "Advanced Physics Engine",
-        // Added "play this free game"
-        description: "Crazy Cattle 3D introduces a groundbreaking physics engine specifically designed for authentic cattle movement. Every animal responds realistically to environmental factors, creating dynamic and unpredictable gameplay moments when you play this free game. The physics system in Crazy Cattle 3D ensures precise collision detection, allowing players to execute tactical maneuvers like momentum-based attacks and strategic dodges. Whether you're performing a calculated aerial assault or narrowly escaping elimination, our physics engine delivers consistently engaging combat scenarios."
+        value: "how-to-play-doodle-baseball", // Based on user FAQ
+        question: "How do you play the Google Doodle Baseball game online?",
+        answer: "To play Doodle Baseball, simply load the game in your browser. Once it starts, you'll be the batter. Click your mouse (or tap your screen) to swing the bat as the pitcher throws the ball. Time your swing to hit home runs and score points in this free online game!"
       },
       {
-        title: "Global Battle Environments",
-        // Added "unblocked online game"
-        description: "Explore Crazy Cattle 3D's three meticulously crafted battle arenas: Ireland's rolling hills perfect for building momentum and executing aerial strikes, Iceland's treacherous volcanic terrain offering tactical hazard zones, and New Zealand's mountainous landscape enabling vertical combat strategies. Each environment in this unblocked online game features carefully balanced power-up locations and strategic choke points. The diverse landscapes of Crazy Cattle 3D fundamentally change how you approach combat and survival, ensuring every match brings fresh tactical challenges."
+        value: "highest-score-doodle-baseball", // Based on user FAQ
+        question: "What is the highest score in Google Doodle Baseball?",
+        answer: "While some players claim very high scores like 49 runs in Doodle Baseball, achieving a personal best is the main goal! The fun in this Google Doodle game comes from improving your timing and trying to hit more home runs each time you play."
       },
       {
-        title: "Pure Skill-Based Combat",
-        // Added "play Crazy Cattle 3D online free"
-        description: "Crazy Cattle 3D sets itself apart with a pure skill-based progression system - no paid advantages, just pure tactical gameplay when you play Crazy Cattle 3D online free. Master the physics-based combat where perfectly timed collisions send opponents flying off the map. Our carefully tuned difficulty curve ensures new players can learn the basics while veterans discover advanced techniques. The competitive spirit of Crazy Cattle 3D shines through as top players showcase incredible movement mastery and strategic thinking."
+        value: "tricks-to-win-doodle-baseball", // Based on user FAQ
+        question: "Are there any tricks to win Google Doodle Baseball?",
+        answer: "The key to Doodle Baseball is timing and reflex. Watch the pitcher and the ball's color to anticipate its speed. Wait for the ball to get close, then click to swing. Practice helps you master hitting home runs in this free, unblocked game. There aren't hidden 'tricks' beyond skill!"
       },
       {
-        title: "Battle Royale Innovation",
-        // Added "free to play online game"
-        description: "Experience Crazy Cattle 3D's unique take on the battle royale format, where physics-based combat meets strategic gameplay. Each 30-minute match features a dynamically shrinking arena that forces tactical confrontations. The streamlined gameplay loop makes Crazy Cattle 3D easy to understand but challenging to master, delivering consistent excitement from start to finish in this free to play online game. Rise through the ranks based purely on your skill and strategic prowess."
+        value: "who-are-the-players",
+        question: "Who are the players and characters in Doodle Baseball?",
+        answer: "In this Google Doodle game, the batters are typically American fast foods like hot dogs (e.g., 'H-Dog'), french fries, ketchup, or even lettuce and lemonade. The pitchers and fielders are represented by peanuts. The audience is also made of food items like popcorn and burgers!"
+      },
+      {
+        value: "difficulty-pitches",
+        question: "How does the pitch difficulty work in this Google Doodle game?",
+        answer: "The pitches in Doodle Baseball vary in speed and difficulty, indicated by color. Green and blue pitches are slower and easier to hit. Purple and yellow are faster, and red pitches are the fastest and hardest, requiring very quick reactions to play successfully."
+      },
+      {
+        value: "is-it-free-unblocked",
+        question: "Is Doodle Baseball free to play and unblocked?",
+        answer: "Yes! Doodle Baseball is a classic Google Doodle game that is completely free to play online. You can usually find unblocked versions, allowing you to play instantly in your browser without any downloads."
       }
     ]
   }
 } as const;
+
 
 

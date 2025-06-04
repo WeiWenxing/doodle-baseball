@@ -1,17 +1,17 @@
 export const siteConfig = {
-  name: "Crazy Cattle 3D",
-  description: "Play Crazy Cattle 3D unblocked online for free. Control crazy cattle in this 3D action game. No download required, start playing instantly in your browser!",
-  domain: "crazy-cattle.net",
-  url: "https://crazy-cattle.net",
-  email: "support@crazy-cattle.net",
-  author: "Crazy Cattle 3D",
+  name: "Doodle Baseball",
+  description: "Play Doodle Baseball unblocked online for free. Experience the classic Google Doodle baseball game with improved graphics and gameplay. No download required, start playing instantly in your browser!",
+  domain: "doodle-baseball.net",
+  url: "https://doodle-baseball.net",
+  email: "support@doodle-baseball.net",
+  author: "Doodle Baseball",
   social: {
-    twitter: "CrazyCattle",
-    facebook: "CrazyCattle",
+    twitter: "DoodleBaseball",
+    facebook: "DoodleBaseball",
   },
   metadata: {
-    keywords: ["crazy cattle", "3d game", "online game", "free game"],
-    themeColor: "#ffffff",
+    keywords: ["doodle baseball", "google doodle", "baseball game", "online game", "free game", "unblocked game"],
+    themeColor: "#2563eb",
     manifestPath: "/assets/img/site.webmanifest",
   },
   images: {
@@ -22,6 +22,6 @@ export const siteConfig = {
       apple: "/assets/img/apple-touch-icon.png",
       // safari: "/assets/img/safari-pinned-tab.svg",
     },
-    og: "/assets/img/crazy-cattle-3d-og-image.png",
+    og: "/assets/img/doodle-baseball-og-image.png",
   },
 };

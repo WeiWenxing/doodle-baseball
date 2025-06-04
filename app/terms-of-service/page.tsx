@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { siteConfig } from "@/config/site";
 
 const TermsOfService = () => {
   return (
@@ -94,7 +95,7 @@ const TermsOfService = () => {
                 If you have any questions about these Terms of Service, please contact us:
               </p>
               <p className="mt-2">
-                By email: support@crazy-cattle.net
+                By email: <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">{siteConfig.email}</a>
               </p>
             </section>
           </div>
