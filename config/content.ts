@@ -74,7 +74,7 @@ export const content = {
     title: "Rate Doodle Baseball",
     votes: "votes",
     initialRating: 4.8,
-    initialVotes: 146
+    initialVotes: 6
   },
   gameSection: {
     title: "Play Doodle Baseball Online Free",

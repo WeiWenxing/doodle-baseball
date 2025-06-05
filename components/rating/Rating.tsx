@@ -10,8 +10,8 @@ export function Rating() {
   const [hasVoted, setHasVoted] = useState(false);
 
   const calculateInitialVotes = () => {
-    const baseVotes = 146;
-    const startDate = new Date('2025-04-20').getTime(); // 改回原来的日期
+    const baseVotes = content.rating.initialVotes;
+    const startDate = new Date('2025-06-05').getTime(); // 改回原来的日期
     const today = new Date().getTime();
     const daysDiff = Math.floor((today - startDate) / (1000 * 60 * 60 * 24));
 
@@ -89,7 +89,7 @@ export function Rating() {
     setHasVoted(false);
     setUserRating(0);
     setRating(content.rating.initialRating);
-    setVotes(146); // 使用基础票数
+    setVotes(content.rating.initialVotes); // 使用基础票数
   };
 
   return (
@@ -157,12 +157,3 @@ export function Rating() {
     </section>
   );
 }
-
-
-
-
-
-
-
-
-
