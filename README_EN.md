@@ -131,7 +131,7 @@ Create a `.env.local` file in the project root:
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Bing Webmaster Tools (optional)
-NEXT_PUBLIC_BING_ID=XXXXXXXXXX
+BING_VERIFICATION_KEY=BingVerificationXXXXXXXXXXXXXXXX
 ```
 
 ## Related Links and Resources

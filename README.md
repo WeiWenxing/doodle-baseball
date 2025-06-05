@@ -131,7 +131,7 @@ yarn build
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
 
 # Bing Webmaster Tools (可选)
-NEXT_PUBLIC_BING_ID=XXXXXXXXXX
+BING_VERIFICATION_KEY=BingVerificationXXXXXXXXXXXXXXXX
 ```
 
 ## 相关链接和资源
