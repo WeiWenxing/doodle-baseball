@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Doodle Baseball",
-  description: "Play Doodle Baseball unblocked online for free. Experience the classic Google Doodle baseball game with improved graphics and gameplay. No download required, start playing instantly in your browser!",
+  description: "Play Doodle Baseball free & unblocked online! Enjoy the fun, nostalgic Google Doodle baseball game. Click to swing, play instantly. No download!",
   domain: "doodle-baseball.net",
   url: "https://doodle-baseball.net",
   email: "support@doodle-baseball.net",
