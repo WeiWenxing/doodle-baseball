@@ -1,138 +1,84 @@
-# Crazy Cattle 3D Game Website
+# Doodle Baseball Game Website
 
-🎮 **Official Website**: [Crazy Cattle 3D Official Website](https://crazy-cattle.net/)
+🎮 **Official Website**: [Doodle Baseball Official Website](https://doodle-baseball.net/)
 
 📖 **中文版本**: [README.md](./README.md)
 
-This is the official website project for Crazy Cattle 3D game, built with Next.js. The website provides multiple game embeds, game information display, and optimization for search engines and AI crawlers.
+This is the official website project for Doodle Baseball game, built with Next.js. The website provides the classic Google Doodle baseball game experience, optimized for search engines and AI crawlers.
 
 ## Project Overview
 
-Crazy Cattle 3D is a physics-based 3D action game that runs directly in browsers without downloads. This project is the official website for the game, now expanded into a multi-game platform offering multiple different types of browser games.
+Doodle Baseball is a baseball game based on the classic Google Doodle that runs directly in browsers without downloads. This project is the official website for the game, recreating the classic baseball gaming experience that captivated millions of players.
 
 ## About the Game
 
-**Crazy Cattle 3D** is an independently developed free online battle royale game featuring explosive physics-based gameplay. Unlike traditional battle royales that focus on weapon collection, Crazy Cattle 3D emphasizes momentum and collision mechanics, creating a unique and chaotic gaming experience.
+**Doodle Baseball** is a faithful recreation and enhanced version of the classic Google Doodle baseball game. The game maintains the original's simple yet addictive gameplay while adding modern improvements including better graphics, smoother animations, and optimized performance.
 
 ### Game Highlights
 
-🎮 **Physics-Based Combat**: Master authentic cattle movement with a groundbreaking physics engine designed for realistic environmental interactions and precise collision detection.
+🎯 **Classic Baseball Experience**: Recreates the classic timing challenge gameplay of the original Google Doodle
 
-🌍 **Three Battle Environments**: Fight across Ireland's rolling hills, Iceland's volcanic terrain, and New Zealand's mountainous landscapes - each offering unique strategic opportunities.
+⚡ **Easy to Learn**: Just click or touch the screen - anyone can start playing immediately
 
-⚡ **Skill-Based Progression**: No paid advantages, just pure tactical gameplay. Perfect your timing for devastating impacts and strategic positioning.
+🌟 **Perfect Timing**: Success depends on precise timing mastery, not complex operations
 
-🎯 **Easy to Learn, Hard to Master**: Intuitive WASD controls with mouse steering, but deep mechanics reward advanced techniques and strategic thinking.
+📱 **Cross-Platform Compatible**: Runs perfectly on desktop, tablet, and mobile devices
 
-### Why Play Crazy Cattle 3D?
+🎮 **Free to Play**: Completely free, no downloads required, no ads
 
-- **Free & Unblocked**: Play instantly in your browser without downloads
-- **Cross-Platform**: Compatible with Windows, Mac, Linux, and mobile devices
-- **Unique Gameplay**: Experience physics-based battle royale like no other game
-- **Regular Updates**: Continuously improved with new features and optimizations
+### Why Choose Our Doodle Baseball?
 
-The game delivers 30-minute matches of pure explosive action, where strategic positioning matters more than aggressive charging. Whether you're a newcomer learning the basics or a veteran mastering advanced techniques, Crazy Cattle 3D offers consistently engaging combat scenarios that keep you coming back for more.
+- **Nostalgic Experience**: Relive the wonderful memories of the classic Google Doodle
+- **Modern Optimization**: Maintains the original flavor while providing better performance and experience
+- **Instant Play**: Open your browser and start playing immediately, no barriers
+- **All Ages Friendly**: Suitable for players of all ages to enjoy
+- **Skill Challenge**: Simple rules hide the ultimate test of timing
 
-### Supported Games List
-
-1. **[Crazy Cattle 3D](https://crazy-cattle.net/)** - Main game, physics-based 3D action game
-2. **[Crazy Cow 3D](https://crazy-cattle.net/crazy-cow-3d)** - Crazy cow version with physics-based chaotic gameplay
-3. **[Cheese Chompers 3D](https://crazy-cattle.net/cheese-chompers-3d)** - Rat-themed knockout game
-4. **[Italian Brainrot Clicker](https://crazy-cattle.net/brainrot-clicker)** - Italian meme clicker game
-5. **[Basketball Bros Unblocked](https://crazy-cattle.net/basketball-bros-unblocked)** - Basketball action game
-6. **[Pokemon Gamma Emerald](https://crazy-cattle.net/pokemon-gamma-emerald)** - Enhanced Pokemon fan-made version
-7. **[Crazy Chicken 3D](https://crazy-cattle.net/crazy-chicken-3d)** - Crazy chicken physics battle game
-8. **[Sprunki Incredibox](https://crazy-cattle.net/sprunki-incredibox)** - Interactive music creation fan-mod game
+The game perfectly captures the essence of baseball - the eternal duel between pitcher and batter. Each pitch is a new challenge, and every perfect hit brings satisfaction.
 
 ### Main Features
 
-- **Multi-Game Embed & Display** - Supports multiple different types of browser games
-- **Unified Game Page Template** - Each game has complete introduction, features, gameplay and FAQ
+- **Classic Baseball Game Experience** - Faithfully recreates the core gameplay of Google Doodle baseball
 - **Game Features, Gameplay & FAQ Introduction** - Detailed game guides and common questions
 - **Search Engine Optimization (SEO)** - Complete meta tags and structured data
 - **AI Crawler Special Content Optimization** - Dedicated llms.txt files
 - **Responsive Design** - Supports various devices and screen sizes
-- **Game Recommendation System** - Recommends other games on each game page
-
-## Tech Stack
-
-- **Framework**: Next.js 13.5.1 (App Router)
-- **Language**: TypeScript 5.2.2
-- **Styling**: Tailwind CSS 3.3.3
-- **UI Components**: Radix UI (Complete accessibility component library)
-- **Deployment**: Vercel
-- **SEO**: next-sitemap 4.2.3
-- **Forms**: React Hook Form + Zod
-- **Icons**: Lucide React
+- **Accessibility** - Ensures all users can enjoy the game
 
 ## Project Structure
 
 ```
 /
-├── app/                    # Next.js App Directory (App Router)
-│   ├── crazy-cow-3d/       # Crazy Cow 3D game page
-│   ├── crazy-chicken-3d/   # Crazy Chicken 3D game page
-│   ├── cheese-chompers-3d/ # Cheese Chompers 3D game page
-│   ├── brainrot-clicker/   # Italian Brainrot Clicker game page
-│   ├── basketball-bros-unblocked/ # Basketball Bros game page
-│   ├── pokemon-gamma-emerald/     # Pokemon Gamma Emerald game page
-│   ├── sprunki-incredibox/ # Sprunki Incredibox game page
-│   ├── games/              # Game list and data configuration
+├── app/                    # Main application directory
+│   ├── layout.tsx          # Global layout
+│   ├── page.tsx            # Homepage (Doodle Baseball)
 │   ├── about/              # About page
 │   ├── contact/            # Contact page
 │   ├── privacy-policy/     # Privacy policy page
-│   ├── terms-of-service/   # Terms of service page
-│   ├── layout.tsx          # Global layout
-│   ├── page.tsx            # Homepage (Crazy Cattle 3D)
-│   ├── schema.ts           # Structured data configuration
-│   └── globals.css         # Global styles
+│   └── terms-of-service/   # Terms of service page
 ├── components/             # React component library
 │   ├── game-section/       # Game display components
 │   ├── layout/             # Layout components (Header, Footer)
-│   ├── templates/          # Page templates (GamePageTemplate)
 │   ├── home/               # Homepage components
 │   ├── features/           # Game features components
 │   ├── what-is/            # Game introduction components
 │   ├── how-to-play/        # Gameplay instruction components
 │   ├── faq/                # FAQ components
-│   ├── other-games/        # Other games recommendation components
-│   ├── rating/             # Rating components
-│   └── ui/                 # Basic UI components (based on Radix UI)
+│   └── ui/                 # Basic UI components
 ├── config/                 # Configuration files
-│   ├── site.ts/js          # Site basic configuration
-│   ├── content.ts          # Game content configuration
-│   ├── layout.ts           # Layout configuration
-│   └── theme.ts            # Theme configuration
-├── hooks/                  # Custom React Hooks
-├── lib/                    # Utility function library
+│   ├── site.js/ts          # Site basic configuration
+│   └── content.ts          # Game content configuration
 ├── public/                 # Static assets
 │   ├── assets/             # Images and other resources
-│   │   ├── crazy-cow-3d/   # Crazy Cow 3D related images
-│   │   ├── crazy-chicken-3d/ # Crazy Chicken 3D related images
-│   │   ├── cheese-chompers-3d/ # Cheese Chompers 3D related images
-│   │   ├── brainrot-clicker/ # Brainrot Clicker related images
-│   │   ├── basketball-bros-unblocked/ # Basketball Bros related images
-│   │   ├── pokemon-gamma-emerald/ # Pokemon related images
-│   │   ├── sprunki-incredibox/ # Sprunki Incredibox related images
+│   │   ├── doodle-baseball/ # Doodle Baseball related images
 │   │   └── img/            # Site common images
 │   ├── game/               # Game files directory
-│   │   ├── crazycattle3d/  # Crazy Cattle 3D game files
-│   │   ├── crazycow3d/     # Crazy Cow 3D game files
-│   │   ├── crazy-chicken-3d/ # Crazy Chicken 3D game files
-│   │   ├── cheesechompers3d/ # Cheese Chompers 3D game files
-│   │   ├── brainrot-clicker/ # Brainrot Clicker game files
-│   │   ├── basketball-bros-unblocked/ # Basketball Bros game files
-│   │   ├── pokemon-gamma-emerald/ # Pokemon game files
-│   │   └── sprunki-incredibox/ # Sprunki Incredibox game files
+│   │   └── doodle-baseball/ # Doodle Baseball game files
 │   ├── llms.txt            # AI crawler dedicated content summary
 │   ├── llms-full.txt       # AI crawler dedicated full content
 │   ├── robots.txt          # Search engine crawler rules
 │   └── sitemap.xml         # Site map
-├── next.config.js          # Next.js configuration (includes game route rewrites)
-├── next-sitemap.config.js  # Sitemap and robots.txt configuration
-├── tailwind.config.ts      # Tailwind CSS configuration
-├── tsconfig.json           # TypeScript configuration
-└── components.json         # shadcn/ui component configuration
+└── next.config.js          # Configuration file (includes game route rewrites)
 ```
 
 ## Development Guide
@@ -141,24 +87,6 @@ The game delivers 30-minute matches of pure explosive action, where strategic po
 
 - Node.js 16.x or higher
 - npm or yarn
-
-### Environment Variables Setup
-
-Create a `.env.local` file in the project root:
-
-```bash
-# Google Analytics Configuration
-# Replace with your own Google Analytics ID
-# How to get: https://analytics.google.com/ → Admin → Data Streams → Measurement ID
-NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
-
-# Other optional configurations
-# NEXT_PUBLIC_SITE_URL=https://your-domain.com
-```
-
-**Note**: 
-- The `.env.local` file is included in `.gitignore` and will not be committed to the repository
-- Please replace `G-XXXXXXXXXX` with your own Google Analytics Measurement ID
 
 ### Install Dependencies
 
@@ -186,117 +114,123 @@ npm run build
 yarn build
 ```
 
-### Generate Sitemap
+## Game Embed
+
+The website embeds games through iframe:
+
+- `/doodle-baseball.embed` → `/game/doodle-baseball/index.html`
+
+Game files are located in the `public/game/doodle-baseball/` directory, containing complete game resources and startup page.
+
+## Environment Variables Setup
+
+Create a `.env.local` file in the project root:
 
 ```bash
-npm run sitemap
-# or
-yarn sitemap
+# Google Analytics Configuration (optional)
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+
+# Bing Webmaster Tools (optional)
+NEXT_PUBLIC_BING_ID=XXXXXXXXXX
 ```
-
-### Clean Sitemap
-
-```bash
-npm run clean-sitemap
-```
-
-## Game Embed Guide
-
-The website embeds games through iframe, each game has corresponding embed routes:
-
-- `/crazy-cattle-3d.embed` → `/game/crazycattle3d/index.html`
-- `/crazy-cow-3d.embed` → `/game/crazycow3d/index.html`
-- `/cheese-chompers-3d.embed` → `/game/cheesechompers3d/index.html`
-- `/brainrot-clicker.embed` → `/game/brainrot-clicker/index.html`
-- `/basketball-bros-unblocked.embed` → `/game/basketball-bros-unblocked/index.html`
-- `/pokemon-gamma-emerald.embed` → `/game/pokemon-gamma-emerald/index.html`
-- `/crazy-chicken-3d.embed` → `/game/crazy-chicken-3d/index.html`
-- `/sprunki-incredibox.embed` → `/game/sprunki-incredibox/index.html`
-
-For detailed game localization deployment guide, refer to `IFRAME_DOWNLOAD_README.md`.
-
-## Adding New Games Guide
-
-To add new games, follow these steps:
-
-1. **Add Game Files**: Place game files in `public/game/[game-name]/` directory
-2. **Create Game Page**: Create page directory and files in `app/[game-name]/`
-3. **Configure Game Data**: Add game information in `app/games/game-data.ts`
-4. **Add Game Content**: Create game's `content.ts` configuration file
-5. **Configure Route Rewrites**: Add embed routes in `next.config.js`
-6. **Add Game Assets**: Add related images in `public/assets/[game-name]/`
 
 ## Related Links and Resources
 
 ### Official Pages
-- 🏠 **Homepage**: [Crazy Cattle 3D Official Website](https://crazy-cattle.net/)
-- 📞 **Contact Us**: [Contact Us](https://crazy-cattle.net/contact)
-- ℹ️ **About Us**: [About Us](https://crazy-cattle.net/about)
-- 🔒 **Privacy Policy**: [Privacy Policy](https://crazy-cattle.net/privacy-policy)
-- 📋 **Terms of Service**: [Terms of Service](https://crazy-cattle.net/terms-of-service)
-
-### External Links (Footer Quick Links)
-- 🐍 **Snake Game**: [Online Snake Game](https://snake-game.online)
-- 📝 **Evernote**: [Evernote Notes](https://lite.evernote.com/note/a7633e02-bcf7-d080-171a-a858eec4a9d2)
-- 📅 **CAL**: [Vincent AI Calendar Booking](https://cal.com/vincent-ai)
-- 💰 **Patreon**: [Patreon Support Page](https://www.patreon.com/posts/crazy-cattle-3d-129397709)
-- 📌 **Pinterest**: [Pinterest Image Sharing](https://www.pinterest.com/pin/581245895696208484/)
-- 🔗 **Linktr**: [Linktr Link Tree](https://linktr.ee/vincent20250520)
-- 📰 **Substack**: [Substack Blog](https://substack.com/@vincent879601/posts)
-- 🎨 **Creem**: [Creem Creative Platform](https://www.creem.io/bip/vincent-ai)
-- 💻 **CrazyCattle3d Github**: [Project English Documentation](https://github.com/WeiWenxing/crazycattle3d/blob/main/README_EN.md)
+- 🏠 **Homepage**: [Doodle Baseball Official Website](https://doodle-baseball.net/)
+- 📞 **Contact Us**: [Contact Us](https://doodle-baseball.net/contact)
+- ℹ️ **About Us**: [About Us](https://doodle-baseball.net/about)
+- 🔒 **Privacy Policy**: [Privacy Policy](https://doodle-baseball.net/privacy-policy)
+- 📋 **Terms of Service**: [Terms of Service](https://doodle-baseball.net/terms-of-service)
 
 ## AI Crawler Optimization
 
 This project has special optimization for AI crawlers:
 
 1. **Dedicated Content Files**: Provides `llms.txt` and `llms-full.txt` files containing structured game information
-2. **robots.txt Configuration**: Guides AI crawlers to access dedicated files while restricting access to other parts of the website
+2. **robots.txt Configuration**: Guides AI crawlers to access dedicated files
 3. **Supported AI Crawlers**: GPTBot, ChatGPT-User, Claude-Web, PerplexityBot, DeepseekBot, etc.
-
-For detailed configuration, see `next-sitemap.config.js`.
-
-## OG Image Generation
-
-For social media preview image generation guide, refer to `OG_IMAGE_README.md`.
 
 ## Deployment
 
 The project is configured for automatic deployment through Vercel. Changes pushed to the main branch will automatically deploy to production.
 
-### Vercel Environment Variables Setup
-
-Configure the following environment variables in Vercel Console:
-
-1. Login to [Vercel Dashboard](https://vercel.com/dashboard)
-2. Select your project
-3. Go to **Settings** → **Environment Variables**
-4. Add the following variables:
-
-```
-Name: NEXT_PUBLIC_GA_ID
-Value: G-XXXXXXXXXX
-Environment: Production, Preview, Development
-```
-
-**Or using Vercel CLI:**
-
-```bash
-# Install Vercel CLI
-npm i -g vercel
-
-# Set environment variable
-vercel env add NEXT_PUBLIC_GA_ID
-# Enter value: G-XXXXXXXXXX
-# Select environments: Production, Preview, Development
-```
-
 ### Automatic Deployment
 
 - **Production**: Push to `main` branch triggers automatic deployment
 - **Preview**: Creating Pull Requests automatically generates preview links
-- **Development**: Use `vercel dev` for local development
+
+## Game Features
+
+### Core Gameplay
+- **Classic Baseball Mechanics**: Authentic pitching and batting physics
+- **Perfect Timing System**: Success depends on precise timing mastery
+- **Progressive Difficulty**: Difficulty gradually increases as the game progresses
+- **Score Tracking**: Records your best performances and progress
+
+### Technical Advantages
+- **No Download Required**: Complete browser-based gaming experience
+- **Cross-Platform Compatible**: Seamless operation on desktop, tablet, and mobile
+- **Optimized Performance**: Smooth 60fps gameplay on modern browsers
+- **Responsive Design**: Automatically adapts to different screen sizes and orientations
+
+### User Experience
+- **Intuitive Controls**: Simple click or touch operations
+- **Visual Feedback**: Clear visual and audio cues
+- **Family Friendly**: Suitable for all ages, no violence or inappropriate content
+- **Accessibility Design**: Designed for users with varying abilities
+
+## Game History
+
+### Original Google Doodle
+The original Doodle Baseball was created by Google as an interactive doodle to celebrate baseball season. Released as a simple browser game, it quickly became one of the most popular Google Doodles ever created, with millions of players worldwide trying to achieve the perfect game.
+
+### Our Enhanced Version
+Our version of Doodle Baseball was created to preserve and enhance this beloved gaming experience. We've maintained the core gameplay that made the original so addictive while adding modern improvements:
+
+- **Enhanced Graphics**: Crisp, high-resolution sprites and animations
+- **Improved Physics**: More realistic ball movement and collision detection
+- **Better Audio**: Enhanced sound effects and optional background music
+- **Performance Optimization**: Smoother gameplay across all devices and browsers
+- **Accessibility Features**: Better support for different input methods and screen sizes
+
+### Cultural Impact
+Doodle Baseball represents more than just a game - it's a cultural phenomenon that introduced millions of people to browser-based gaming. Its simple yet engaging gameplay proved that great games don't need complex mechanics or high-end graphics to be entertaining and memorable.
+
+## How to Play
+
+### Basic Controls
+- **Desktop**: Use your mouse to click when you want to swing the bat
+- **Mobile**: Tap the screen at the perfect moment to make contact with the ball
+- **Timing**: Watch the pitcher's motion and click/tap just as the ball reaches the optimal hitting zone
+
+### Gameplay Strategy
+1. **Observe the Pitcher**: Each pitch has a consistent timing pattern - learn to recognize it
+2. **Focus on the Ball**: Keep your eyes on the ball's trajectory from the pitcher's hand
+3. **Perfect Timing**: Click or tap at the exact moment the ball enters your hitting zone
+4. **Aim for Distance**: Well-timed hits will send the ball farther and earn more points
+5. **Stay Consistent**: Develop a rhythm and stick to it for better overall performance
+
+### Scoring System
+- **Distance Matters**: Longer hits earn higher scores
+- **Timing Bonus**: Perfect timing provides additional point multipliers
+- **Consecutive Hits**: Maintaining a hitting streak increases your score multiplier
+- **Personal Records**: The game tracks your best individual hits and overall game scores
+
+## Why Play Doodle Baseball?
+
+### Nostalgic Appeal
+Our version stays true to the original Google Doodle experience while adding modern enhancements. We've preserved the gameplay mechanics that made the original so beloved while improving the technical aspects for today's devices and browsers.
+
+### Accessibility
+Unlike many online games, our Doodle Baseball is designed to be accessible to everyone. No downloads, no complicated setup, no barriers to entry - just click and play.
+
+### Skill Development
+While the game is easy to learn, mastering the timing provides a satisfying challenge that keeps players coming back. It's perfect for improving hand-eye coordination and reaction time.
+
+### Universal Appeal
+Whether you're a baseball fan or just looking for a fun way to pass time, Doodle Baseball delivers an entertaining experience that captures the spirit of America's favorite pastime.
 
 ## License
 
-© 2025 Crazy Cattle 3D. All rights reserved. 
+© 2025 Doodle Baseball. All rights reserved. 

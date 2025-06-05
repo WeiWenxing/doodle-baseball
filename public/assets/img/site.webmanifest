@@ -1,19 +1,53 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "Doodle Baseball - Free Online Baseball Game",
+    "short_name": "Doodle Baseball",
+    "description": "Play Doodle Baseball free & unblocked online! Enjoy the fun, nostalgic Google Doodle baseball game. Click to swing, play instantly. No download!",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#2563eb",
+    "background_color": "#ffffff",
+    "lang": "en",
+    "categories": ["games", "sports", "entertainment"],
     "icons": [
         {
-            "src": "/android-chrome-192x192.png",
+            "src": "/assets/img/android-chrome-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
         },
         {
-            "src": "/android-chrome-512x512.png",
+            "src": "/assets/img/android-chrome-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/img/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/assets/img/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/assets/img/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png",
+            "purpose": "any"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+    "screenshots": [
+        {
+            "src": "/assets/doodle-baseball/doodle-baseball.webp",
+            "sizes": "any",
+            "type": "image/webp",
+            "label": "Doodle Baseball Game Screenshot"
+        }
+    ]
 }
