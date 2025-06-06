@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { content as defaultContent } from "@/config/content";
 import { theme } from "@/config/theme";
 import { layout } from "@/config/layout";
@@ -14,6 +14,41 @@ interface GameSectionProps {
 export function GameSection({ content = defaultContent }: GameSectionProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const workerRef = useRef<Worker | null>(null);
+
+  /**
+   * Preloads the game in a background thread using a Web Worker.
+   * This is a "fire-and-forget" approach to not block the main thread.
+   * The worker script is inlined to make the component self-contained.
+   */
+  useEffect(() => {
+    const workerScript = `
+      self.addEventListener('message', (event) => {
+        const { gameUrl } = event.data;
+        if (gameUrl) {
+          fetch(gameUrl).catch(err => console.error('[GamePreloader] Fetch error:', err));
+        }
+      });
+    `;
+
+    const blob = new Blob([workerScript], { type: 'application/javascript' });
+    const workerUrl = URL.createObjectURL(blob);
+
+    // Create a new worker from the Blob URL
+    const worker = new Worker(workerUrl);
+    workerRef.current = worker;
+
+    // Send it the task
+    worker.postMessage({
+      gameUrl: content.gameSection.game.url
+    });
+
+    // Terminate the worker and revoke the Blob URL on component unmount
+    return () => {
+      worker.terminate();
+      URL.revokeObjectURL(workerUrl);
+    };
+  }, [content.gameSection.game.url]); // Dependency ensures it runs if the url changes
 
   const toggleFullscreen = async () => {
     if (!document.fullscreenElement) {
