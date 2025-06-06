@@ -141,15 +141,7 @@
         </div>
     </div>
 
-    <!-- Game Iframe (initially hidden) -->
-    <iframe
-        id="game-iframe"
-        class="gamePlayerHidden"
-        src="https://1games.io/game/doodle-baseball/"
-        allowfullscreen="true"
-        allow="autoplay; fullscreen; gamepad; keyboard-map; xr-spatial-tracking"
-        title="Doodle Baseball">
-    </iframe>
+    <!-- Game Iframe will be injected here by the script -->
 
     <script>
         function showGame() {
@@ -159,16 +151,27 @@
                 splashScreen.classList.add('gamePlayerHidden');
             }
 
-            // Show game iframe
-            var gameIframe = document.getElementById('game-iframe');
-            if (gameIframe) {
-                gameIframe.classList.remove('gamePlayerHidden');
-                // Optional: Focus the iframe if needed, though this can be tricky
-                // gameIframe.focus();
-            }
+            // If the iframe already exists, do nothing.
+            if (document.getElementById('game-iframe')) return;
 
-            // Here you would typically trigger ad display if 'showAFG' was for ads.
-            // For this example, we are just showing the game.
+            // Create the iframe dynamically
+            var gameIframe = document.createElement('iframe');
+            gameIframe.id = 'game-iframe';
+            // We apply the necessary classes and styles directly
+            gameIframe.style.width = '100%';
+            gameIframe.style.height = '100%';
+            gameIframe.style.position = 'absolute'; // Ensure it covers the area
+            gameIframe.style.top = '0';
+            gameIframe.style.left = '0';
+            gameIframe.style.border = 'none';
+
+            gameIframe.src = "https://1games.io/game/doodle-baseball/";
+            gameIframe.allowFullscreen = true;
+            gameIframe.allow = "autoplay; fullscreen; gamepad; keyboard-map; xr-spatial-tracking";
+            gameIframe.title = "Doodle Baseball";
+
+            // Append it directly to the body to ensure it fills the viewport
+            document.body.appendChild(gameIframe);
         }
 
         /**
@@ -196,8 +199,8 @@
                 // Create and start the new worker.
                 const preloaderWorker = new Worker(workerUrl);
 
-                // Get the real game's URL from the hidden iframe's src attribute.
-                const realGameUrl = document.getElementById('game-iframe').src;
+                // The URL to preload
+                const realGameUrl = "https://1games.io/game/doodle-baseball/";
 
                 // Send the URL to the worker to begin preloading.
                 preloaderWorker.postMessage({ gameUrl: realGameUrl });
@@ -212,4 +215,4 @@
         })();
     </script>
 </body>
-</html> 
+</html>
