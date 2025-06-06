@@ -170,6 +170,46 @@
             // Here you would typically trigger ad display if 'showAFG' was for ads.
             // For this example, we are just showing the game.
         }
+
+        /**
+         * Self-executing function to start preloading the real game in the background
+         * using an inlined Web Worker. This ensures that when the user clicks "Play Now",
+         * the game assets are already in the browser cache.
+         */
+        (function() {
+            try {
+                // The entire worker logic is defined here as a string.
+                const workerScript = `
+                    self.addEventListener('message', (event) => {
+                        const { gameUrl } = event.data;
+                        if (gameUrl) {
+                            // Fetching the URL and its resources to populate the browser cache.
+                            fetch(gameUrl).catch(err => console.error('[Preload Worker] Fetch failed:', err));
+                        }
+                    });
+                `;
+
+                // Create a temporary, in-memory URL for the worker script.
+                const blob = new Blob([workerScript], { type: 'application/javascript' });
+                const workerUrl = URL.createObjectURL(blob);
+
+                // Create and start the new worker.
+                const preloaderWorker = new Worker(workerUrl);
+
+                // Get the real game's URL from the hidden iframe's src attribute.
+                const realGameUrl = document.getElementById('game-iframe').src;
+
+                // Send the URL to the worker to begin preloading.
+                preloaderWorker.postMessage({ gameUrl: realGameUrl });
+
+                console.log('Background preloading of the game has been initiated.');
+
+                // The created Object URL will be released when the document is unloaded.
+            } catch (e) {
+                console.error('Failed to initialize the game preloader worker:', e);
+                // If the worker fails, the game will still load normally on click, just without the speed boost.
+            }
+        })();
     </script>
 </body>
 </html> 
