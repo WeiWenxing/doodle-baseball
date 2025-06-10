@@ -41,7 +41,7 @@ export const content = {
     games: {  // 添加 games section
       title: "Games",
       links: [
-        { text: "Doodle Baseball", href: "/doodle-baseball" },
+        { text: "Doodle Baseball", href: "/" },
         { text: "Drift Boss", href: "/drift-boss" }
       ]
     },
