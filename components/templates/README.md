@@ -35,24 +35,24 @@ interface GamePageTemplateProps {
 
 ## 如何添加新游戏页面
 
-以下步骤说明如何快速添加一个新游戏页面。请将 `[GAME_SLUG]` (例如 `crazy-chicken-3d`)、`[GAME_NAME]` (例如 "Crazy Chicken 3D") 等占位符替换为实际游戏信息。
+以下步骤说明如何快速添加一个新游戏页面。请将 `[GAME_SLUG]` (例如 `drift-boss`)、`[GAME_NAME]` (例如 "Drift Boss") 等占位符替换为实际游戏信息。
 
 ### 1. 创建游戏页面文件
 
 #### 1.1 复制现有游戏目录
-1. 在 `app/` 目录下找到任意一个现有游戏目录（如 `app/crazy-chicken-3d/`）
+1. 在 `app/` 目录下找到任意一个现有游戏目录（如 `app/drift-boss/`）
 2. 复制整个目录并重命名为 `app/[GAME_SLUG]/`
 
 #### 1.2 修改页面文件 (`page.tsx`)
 打开 `app/[GAME_SLUG]/page.tsx`，替换以下内容：
-- 导入语句中的内容变量名（改为驼峰式命名，如 `crazyChickenContent`）
+- 导入语句中的内容变量名（改为驼峰式命名，如 `driftBossContent`）
 - `metadata` 中的 `title` 和 `description`
 - `gameConfig.metadata` 中的相关信息
-- 组件函数名（如 `CrazyChicken3DPage`）
+- 组件函数名（如 `DriftBossPage`）
 
 #### 1.3 修改内容配置文件 (`content.ts`)
 打开 `app/[GAME_SLUG]/content.ts`，替换以下内容：
-- 导出变量名（改为驼峰式命名，如 `crazyChickenContent`）
+- 导出变量名（改为驼峰式命名，如 `driftBossContent`）
 - `gameSection.title` 和 `game` 对象中的信息
 - `features.title` 和 `items` 数组中的特性描述
 - `whatIs` 部分的标题、描述和图片路径
@@ -83,7 +83,7 @@ interface GamePageTemplateProps {
 ### 5. 创建游戏嵌入文件
 
 #### 5.1 复制现有游戏嵌入目录
-1. 复制 `public/game/crazy-chicken-3d/` 目录
+1. 复制 `public/game/drift-boss/` 目录
 2. 重命名为 `public/game/[GAME_SLUG]/`
 
 #### 5.2 修改嵌入HTML文件
@@ -146,9 +146,9 @@ interface GamePageTemplateProps {
 1. **文本内容**：所有面向用户的文本内容必须使用英文
 2. **图片优化**：确保图片经过Web优化，控制文件大小
 3. **命名规范**：
-   - 文件夹和URL使用短横线分隔（如 `crazy-chicken-3d`）
-   - 变量名使用驼峰式命名，可以适当简化（如 `crazyChickenContent` 或 `basketballBrosUnblockedContent`）
-   - 组件函数名使用PascalCase（如 `CrazyChicken3DPage`）
+   - 文件夹和URL使用短横线分隔（如 `drift-boss`）
+   - 变量名使用驼峰式命名，可以适当简化（如 `driftBossContent` 或 `doodleBaseballContent`）
+   - 组件函数名使用PascalCase（如 `DriftBossPage`）
 4. **路径一致性**：确保所有文件路径引用正确且一致
 5. **重启服务**：修改 `next.config.js` 后需要重启开发服务器
 

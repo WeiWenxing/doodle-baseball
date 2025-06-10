@@ -8,6 +8,20 @@ export interface Game {
 
 export const games: Record<string, Game> = {
   // 游戏数据将在后续添加
+  'doodle-baseball': {
+    id: 'doodle-baseball',
+    title: 'Doodle Baseball',
+    description: 'A charming Google Doodle baseball game where you play as various snacks.',
+    image: '/assets/doodle-baseball/doodle-baseball.webp',
+    url: '/doodle-baseball'
+  },
+  'drift-boss': {
+    id: 'drift-boss',
+    title: 'Drift Boss',
+    description: 'A simple yet addictive one-tap drifting game. Master the corners!',
+    image: '/assets/drift-boss/drift-boss.webp',
+    url: '/drift-boss'
+  }
 };
 
 // 获取其他游戏列表

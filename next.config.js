@@ -11,6 +11,10 @@ const nextConfig = {
         destination: '/game/doodle-baseball/index.html',
       },
       // 其他游戏路由重写规则将在后续添加
+      {
+        source: '/drift-boss.embed',
+        destination: '/game/drift-boss/index.html',
+      },
     ]
   }
 };
