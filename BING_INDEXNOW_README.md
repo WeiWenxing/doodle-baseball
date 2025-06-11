@@ -12,17 +12,13 @@
 curl -X POST "https://www.bing.com/IndexNow" \
   -H "Content-Type: application/json; charset=utf-8" \
   -d '{
-    "host": "crazy-cattle.net",
-    "key": "60c1f021f8bf4251a63eace188cfc920",
-    "keyLocation": "https://crazy-cattle.net/60c1f021f8bf4251a63eace188cfc920.txt",
+    "host": "doodle-baseball.net",
+    "key": "<key>",
+    "keyLocation": "https://doodle-baseball.net/<key>.txt",
     "urlList": [
-      "https://crazy-cattle.net/",
-      "https://crazy-cattle.net/crazy-chicken-3d",
-      "https://crazy-cattle.net/crazy-cow-3d",
-      "https://crazy-cattle.net/cheese-chompers-3d",
-      "https://crazy-cattle.net/basketball-bros-unblocked",
-      "https://crazy-cattle.net/brainrot-clicker",
-      "https://crazy-cattle.net/pokemon-gamma-emerald"
+      "https://doodle-baseball.net/",
+      "https://doodle-baseball.net/doodle-baseball",
+      "https://doodle-baseball.net/drift-boss"
     ]
   }'
 ```
