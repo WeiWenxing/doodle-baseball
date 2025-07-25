@@ -13,7 +13,7 @@ export const games: Record<string, Game> = {
     title: 'Doodle Baseball',
     description: 'A charming Google Doodle baseball game where you play as various snacks.',
     image: '/assets/doodle-baseball/doodle-baseball.webp',
-    url: '/doodle-baseball'
+    url: '/'
   },
   'drift-boss': {
     id: 'drift-boss',

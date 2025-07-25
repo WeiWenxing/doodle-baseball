@@ -63,14 +63,14 @@ export function Header({ searchQuery = "", onSearchChange = () => {}, onSearch =
             />
           </Link>
           <Link href="/" className="no-underline">
-            <h1 className={cn(
+            <span className={cn(
               layout.header.logoSize,
               "font-bold",
               theme.header.colors.text,
               theme.header.colors.hover // Apply hover effect to text as well
             )}>
               {formatPathToTitle()}
-            </h1>
+            </span>
           </Link>
         </div>
 

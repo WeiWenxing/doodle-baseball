@@ -10,6 +10,7 @@ import { FAQ } from "@/components/faq/FAQ";
 import { Rating } from "@/components/rating/Rating";
 import { Footer } from "@/components/layout/Footer";
 import { getOtherGames } from "@/app/games/game-data";
+import { siteConfig } from "@/config/site";
 
 export function HomeTemplate() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -35,6 +36,9 @@ export function HomeTemplate() {
       />
 
       <main className="container mx-auto px-4 py-8">
+        <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 lg:mb-12">
+            {siteConfig.name}
+          </h1>
         <GameSection />
         <OtherGames
           games={getOtherGames()}
