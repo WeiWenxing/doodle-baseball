@@ -1,4 +1,5 @@
 import { siteConfig } from "./site";
+import { withAssetPrefix } from "../lib/utils";
 
 export const content = {
   header: {
@@ -133,7 +134,7 @@ export const content = {
       "Ready to play this iconic Google Doodle game? No downloads needed for Doodle Baseball. Step into the batter's box, swing for the fences, and enjoy this free online classic!",
     logo: {
       // Placeholder - update if you have a specific logo for your Doodle Baseball page
-      src: "/assets/img/android-chrome-512x512.png",
+      src: withAssetPrefix("/assets/img/android-chrome-512x512.png"),
       // Alt text updated for the game concept and keywords
       alt: "Doodle Baseball - Free Online Google Doodle Food Game Logo"
     }
@@ -147,7 +148,7 @@ export const content = {
       "Aim to hit home runs to score the most points in this free game! Pay attention to the color of the pitch in Doodle Baseball: green/blue are easier, while purple, yellow, and especially red pitches are faster and require quicker reflexes. If you miss the ball three times (three strikes), you're out, and the game ends.\n\n" +
       "The more home runs you score, the higher your achievement. Play this unblocked Google Doodle game now and see if you can hit a grand slam against those tricky peanut pitchers!",
     // Placeholder - update if you have a specific gameplay image
-    image: "/assets/doodle-baseball/doodle-baseball.webp",
+    image: withAssetPrefix("/assets/doodle-baseball/doodle-baseball.webp"),
     // Alt text updated
     imageAlt: "Doodle Baseball Online Game Guide - Free Google Doodle Click-to-Swing Gameplay"
   },

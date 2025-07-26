@@ -1,3 +1,5 @@
+import { withAssetPrefix } from "@/lib/utils";
+
 export interface Game {
   id: string;
   title: string;
@@ -12,14 +14,14 @@ export const games: Record<string, Game> = {
     id: 'doodle-baseball',
     title: 'Doodle Baseball',
     description: 'A charming Google Doodle baseball game where you play as various snacks.',
-    image: '/assets/doodle-baseball/doodle-baseball.webp',
+    image: withAssetPrefix('/assets/doodle-baseball/doodle-baseball.webp'),
     url: '/'
   },
   'drift-boss': {
     id: 'drift-boss',
     title: 'Drift Boss',
     description: 'A simple yet addictive one-tap drifting game. Master the corners!',
-    image: '/assets/drift-boss/drift-boss.webp',
+    image: withAssetPrefix('/assets/drift-boss/drift-boss.webp'),
     url: '/drift-boss'
   }
 };

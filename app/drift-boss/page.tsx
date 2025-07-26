@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { GamePageTemplate } from "@/components/templates/GamePageTemplate";
 import { driftBossContent } from "./content";
+import { withAssetPrefix } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: `Drift Boss | Play Unblocked Game | ${siteConfig.domain}`,
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     images: [
       {
-        url: `/assets/drift-boss/drift-boss.webp`,
+        url: withAssetPrefix(`/assets/drift-boss/drift-boss.webp`),
         alt: `Drift Boss Screenshot`,
       }
     ]
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Drift Boss - Free Online Unblocked Game',
     description: 'Play Drift Boss free online game without download',
-    images: [`/assets/drift-boss/drift-boss.webp`],
+    images: [withAssetPrefix(`/assets/drift-boss/drift-boss.webp`)],
   },
   alternates: {
     canonical: `/drift-boss`,

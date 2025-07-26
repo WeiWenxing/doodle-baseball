@@ -1,4 +1,5 @@
 import { content as globalContent } from "@/config/content";
+import { withAssetPrefix } from "@/lib/utils";
 
 export const driftBossContent = {
   // 基础内容继承自全局配置
@@ -57,7 +58,7 @@ export const driftBossContent = {
                   "Unlock various vehicles, earn daily rewards, and utilize boosters to maximize your score. It’s a fantastic choice among free online games for quick fun or long sessions of testing your drifting prowess. Can you become the ultimate Drift Boss?",
     logo: {
       // Placeholder - update if you have a specific logo for Drift Boss
-      src: "/assets/drift-boss/drift-boss-logo.webp",
+      src: withAssetPrefix("/assets/drift-boss/drift-boss-logo.webp"),
       // Alt text updated for the game concept and keywords
       alt: "Drift Boss - Free Online Unblocked Drifting Car Game Logo"
     }
@@ -71,7 +72,7 @@ export const driftBossContent = {
                   "Controls are simple: on PC, press the Left Mouse Button or Space Bar to drift right, and release to go left. On Mobile, tap the screen to drift right, and release to go left. There are no complicated buttons for acceleration or deceleration in this car game.\n\n" +
                   "Collect coins scattered along the way to unlock new vehicles. Anticipate changes in road direction, turn through corners with precise judgment, and try to stay in the middle of the road for safety and better coin collection. This online drifting game rewards skill and perseverance!",
     // Placeholder - update if you have a specific gameplay image
-    image: "/assets/drift-boss/drift-boss.webp",
+    image: withAssetPrefix("/assets/drift-boss/drift-boss.webp"),
     // Alt text updated
     imageAlt: "Drift Boss Online Drifting Game Guide - Free Unblocked Car Game Controls"
   },
