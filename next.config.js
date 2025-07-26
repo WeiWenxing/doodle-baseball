@@ -8,12 +8,12 @@ const nextConfig = {
     return [
       {
         source: '/doodle-baseball.embed',
-        destination: 'https://r2assets.cc/doodle-baseball/game/doodle-baseball/index.html',
+        destination: `${process.env.NEXT_PUBLIC_ASSETS_PREFIX || ''}/game/doodle-baseball/index.html`,
       },
       // 其他游戏路由重写规则将在后续添加
       {
         source: '/drift-boss.embed',
-        destination: 'https://r2assets.cc/doodle-baseball/game/drift-boss/index.html',
+        destination: `${process.env.NEXT_PUBLIC_ASSETS_PREFIX || ''}/game/drift-boss/index.html`,
       },
     ]
   }
